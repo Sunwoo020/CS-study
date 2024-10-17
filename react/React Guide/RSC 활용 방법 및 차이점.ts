@@ -4,8 +4,8 @@
 RSC는 Next.js와 같은 프레임워크와 함께 사용되어 클라이언트 애플리케이션의 성능을 극대화합니다.
 
 React Server Components는 기존의 SSR(Server-Side Rendering)이나 SSG(Static Site Generation)와는 다른 방식으로 작동하며,
- 프론트엔드 애플리케이션에서 데이터 전달 및 렌더링을 최적화할 수 있습니다. 
- 여기서 RSC의 개념과 특징, 이를 사용하는 방법 및 기존 SSR과의 차이점을 자세히 설명해드리겠습니다.
+프론트엔드 애플리케이션에서 데이터 전달 및 렌더링을 최적화할 수 있습니다. 
+여기서 RSC의 개념과 특징, 이를 사용하는 방법 및 기존 SSR과의 차이점을 자세히 설명해드리겠습니다.
 
 React Server Components(RSC)란?
 React Server Components는 서버에서 React 컴포넌트를 렌더링하고, 
