@@ -55,3 +55,18 @@ const onClickCreateNumber3 = () => {
  Automatic Batching은 지원 범위를 기존 콜스택에서 태스크 큐까지 확장한 것
 콜스택: JS 엔진에서 일반적으로 Job을 처리하는 일반적인 자료구조
 태스크 큐: 비동기 콜백 등을 처리하는 자료구조`;
+
+`번외) Automatic Batching 기능을 사용하고 싶지 않다면?
+react-dom의 flushSync()를 활용하여 Automatic Batching 기능을 off 할 수 있음
+`;
+import { flushSync } from "react-dom";
+const onClickCreateNumber4 = () => {
+  // flushSync() 활용
+  flushSync(() => {
+    setNumber((prev) => prev + 1);
+  });
+
+  flushSync(() => {
+    setBoolean((prev) => !prev);
+  });
+};
