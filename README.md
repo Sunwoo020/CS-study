@@ -1,1 +1,1 @@
-# CS-study
+# CS-study in React,TypeScript
