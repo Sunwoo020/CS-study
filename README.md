@@ -1,1 +1,1 @@
-# CS-study in React,TypeScript
+# CS-study in React,Typescript, Frontend
