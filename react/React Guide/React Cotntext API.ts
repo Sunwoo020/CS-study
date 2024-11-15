@@ -10,8 +10,12 @@ React Context API는 부모 컴포넌트에서 전역적으로 사용할 수 있
 예를 들어, 사용자 인증 정보, 테마 설정, 다국어 지원 등의 전역적으로 공유할 필요가 있는 상태에 유용하다
 
 Context API를 사용한 주요 단계
+
 Context 생성 (React.createContext): 전역 상태를 관리하기 위해 먼저 Context 객체를 생성한다
-Provider 설정 (Context.Provider): Provider 컴포넌트는 데이터를 공유할 컴포넌트 트리의 최상위에 위치시키며, 자식 컴포넌트가 데이터를 구독할 수 있도록 한다
+
+Provider 설정 (Context.Provider): Provider 컴포넌트는 데이터를 공유할 컴포넌트 트리의 최상위에 위치시키며,
+자식 컴포넌트가 데이터를 구독할 수 있도록 한다
+
 Consumer 사용 (useContext 훅): 자식 컴포넌트에서 공유된 데이터를 사용하기 위해 useContext 훅을 사용한다
 
 Context API 예시 (TypeScript)
