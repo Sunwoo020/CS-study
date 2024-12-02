@@ -7,6 +7,7 @@ React Query는 REST API뿐만 아니라 GraphQL과 같은 다양한 데이터 �
 1. React Query의 주요 개념
 1.1. 서버 상태(Server State)
 서버 상태는 클라이언트 애플리케이션에서 유지하지만, 서버에서 가져오는 데이터이다.
+
 서버 상태의 특징:
 서버에서 변경될 수 있다.
 클라이언트에서 캐싱해야 한다.
@@ -15,6 +16,7 @@ React Query는 이러한 서버 상태를 효율적으로 관리한다.
 
 1.2. React Query의 주요 기능
 데이터 패칭: API 호출을 간단히 처리한다.
+
 캐싱: 클라이언트에서 데이터를 캐싱해 불필요한 네트워크 요청을 줄인다.
 리페치(Refetch): 데이터의 최신 상태를 유지하기 위해 자동 또는 수동으로 요청한다.
 백그라운드 동기화: 데이터가 오래되었을 때 백그라운드에서 자동으로 업데이트한다.
@@ -23,12 +25,11 @@ React Query는 이러한 서버 상태를 효율적으로 관리한다.
 React Suspense 지원: 데이터 로딩 시 Suspense와 연동 가능하다.
 
 2. React Query 설치
-React Query를 사용하려면 아래 명령어로 설치한다:
-
+React Query를 사용하려면 아래 명령어로 설치한다
 `
 npm install @tanstack/react-query
 `
-React Query는 QueryClient와 QueryClientProvider로 초기화한다:
+React Query는 QueryClient와 QueryClientProvider로 초기화한다
 
 `import React from 'react';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
