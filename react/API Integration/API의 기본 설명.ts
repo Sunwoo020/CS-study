@@ -59,7 +59,7 @@ const apiClient: AxiosInstance = axios.create({
 `
 
 API 호출 예제
-1. GET 요청: 데이터 조회
+GET 요청: 데이터 조회
 서버에서 데이터를 가져오는 예제입니다.
 `
 const getUser = async (userId: number): Promise<ApiResponse<User>> => {
@@ -73,7 +73,7 @@ const getUser = async (userId: number): Promise<ApiResponse<User>> => {
   console.log('Fetched User:', user.data);
 })();
 `
-2. POST 요청: 데이터 생성
+POST 요청: 데이터 생성
 클라이언트에서 서버로 데이터를 전송하여 새 리소스를 생성합니다.
 `
 const createUser = async (user: CreateUserRequest): Promise<ApiResponse<User>> => {
@@ -87,7 +87,7 @@ const createUser = async (user: CreateUserRequest): Promise<ApiResponse<User>> =
   console.log('Created User:', newUser.data);
 })();
 `
-3. PUT 요청: 데이터 수정
+PUT 요청: 데이터 수정
 기존 데이터를 업데이트하는 예제입니다.
 `
 const updateUser = async (userId: number, user: Partial<User>): Promise<ApiResponse<User>> => {
@@ -101,7 +101,7 @@ const updateUser = async (userId: number, user: Partial<User>): Promise<ApiRespo
   console.log('Updated User:', updatedUser.data);
 })();
 `
-4. DELETE 요청: 데이터 삭제
+DELETE 요청: 데이터 삭제
 서버에서 데이터를 삭제하는 예제입니다.
 `
 const deleteUser = async (userId: number): Promise<ApiResponse<null>> => {
