@@ -46,10 +46,10 @@ SOAP와 TypeScript
 SOAP API와 통신하기 위해 TypeScript에서 soap 라이브러리를 사용할 수 있다. 
 다음은 SOAP를 사용하는 방법에 대한 자세한 예제다.
 
-1. SOAP 클라이언트 설치
+SOAP 클라이언트 설치
 npm install soap
 
-2. WSDL 기반의 SOAP 클라이언트 생성
+WSDL 기반의 SOAP 클라이언트 생성
 WSDL 파일은 SOAP API의 엔드포인트, 메서드, 데이터 타입 등을 정의한다.
 
 클라이언트 생성 코드
@@ -69,7 +69,7 @@ const createSoapClient = async (): Promise<soap.Client> => {
   });
 };
 `
-3. SOAP 메서드 호출
+SOAP 메서드 호출
 SOAP 클라이언트는 WSDL에 정의된 메서드를 자동으로 제공한다.
 
 Add 메서드 호출 예제
@@ -108,7 +108,7 @@ const addNumbers = async (intA: number, intB: number): Promise<number> => {
   }
 })();
 `
-4. SOAP 메서드 에러 처리
+SOAP 메서드 에러 처리
 SOAP 호출 중 에러가 발생하면 적절히 처리해야 한다.
 `;
 const safeSoapCall = async <T>(
@@ -128,7 +128,7 @@ const safeSoapCall = async <T>(
   console.log("Safe SOAP Result:", result);
 })();
 `
-5. WSDL 기반 타입 생성
+WSDL 기반 타입 생성
 WSDL 파일을 기반으로 타입을 자동 생성하면 생산성과 유지보수성이 향상된다. 
 TypeScript에서 SOAP API 타입을 자동으로 생성하려면 wsdl2ts와 같은 도구를 사용할 수 있다.
 
@@ -161,5 +161,4 @@ SOAP와 REST의 비교
 SOAP은 높은 신뢰성과 보안이 필요한 시스템에서 여전히 강력한 선택지다. 
 특히 금융, 의료, 정부 시스템에서 널리 사용된다. 
 TypeScript를 활용하면 SOAP API 호출을 타입 안전하고 구조적으로 관리할 수 있다.
-
 `;
