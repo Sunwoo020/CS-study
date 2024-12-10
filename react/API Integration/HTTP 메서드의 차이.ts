@@ -1,7 +1,7 @@
 `HTTP 메서드는 서버와 클라이언트 간의 통신에서 요청의 성격을 정의한다. 
 GET, POST, PUT, DELETE, PATCH는 가장 많이 사용되는 메서드로, 각각의 목적과 사용 사례가 다르다. 
 
-1. GET (데이터 조회)
+GET (데이터 조회)
 목적: 서버에서 데이터를 조회하기 위한 메서드.
 
 특징:
@@ -23,8 +23,7 @@ const fetchUser = async (userId: number): Promise<void> => {
 };
 
 fetchUser(123); // 호출: /users/123
-`
-2. POST (데이터 생성)
+`POST (데이터 생성)
 목적: 서버에 새로운 데이터 생성.
 
 특징:
@@ -48,7 +47,7 @@ const createUser = async (user: {
 
 createUser({ name: "John Doe", email: "john.doe@example.com" });
 `
-3. PUT (데이터 수정: 전체 업데이트)
+PUT (데이터 수정: 전체 업데이트)
 목적: 기존 데이터를 전체 업데이트.
 
 특징:
@@ -72,7 +71,7 @@ const updateUser = async (
 
 updateUser(123, { name: "Jane Doe", email: "jane.doe@example.com" });
 `
-4. DELETE (데이터 삭제)
+DELETE (데이터 삭제)
 목적: 서버에서 데이터를 삭제.
 
 특징:
@@ -92,7 +91,7 @@ const deleteUser = async (userId: number): Promise<void> => {
 
 deleteUser(123);
 `
-5. PATCH (데이터 수정: 부분 업데이트)
+PATCH (데이터 수정: 부분 업데이트)
 목적: 기존 데이터의 일부 필드만 업데이트.
 
 특징:
