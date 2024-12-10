@@ -7,8 +7,7 @@ async/await는 ES8(ECMAScript 2017)에서 도입되어
 
 아래에서 Promise와 async/await의 개념과 차이점, 그리고 사용법을 자세히 살펴보자.
 
-1. Promise
-1.1. Promise란?
+Promise란?
 Promise는 비동기 작업의 성공 또는 실패를 나타내는 객체이다.
 
 Promise는 세 가지 상태를 가진다
@@ -19,7 +18,7 @@ Promise는 세 가지 상태를 가진다
 
 Promise는 .then(), .catch(), .finally()를 사용해 결과를 처리한다.
 
-1.2. Promise 기본 사용법
+Promise 기본 사용법
 `;
 const fetchData = () => {
   return new Promise((resolve, reject) => {
@@ -45,21 +44,22 @@ fetchData()
     console.log("Operation completed.");
   });
 `
-1.3. Promise의 장점
+Promise의 장점
 체인 형태의 구성: .then()을 통해 비동기 작업을 순차적으로 처리 가능.
 비동기 처리의 표준화: 콜백 함수의 중첩 문제(Callback Hell)를 해결.
 
-1.4. Promise의 단점
+Promise의 단점
 .then()과 .catch()를 중첩해 사용할 경우, 코드 가독성이 떨어질 수 있음.
 복잡한 비동기 흐름에서는 읽기 어려운 코드가 될 수 있음.
 
-2. Async/Await
-2.1. Async/Await란?
+
+
+Async/Await란?
 async/await는 Promise를 더 간결하게 사용하도록 도와주는 문법이다.
 async 키워드는 함수 앞에 사용하며, 해당 함수는 항상 Promise를 반환한다.
 await 키워드는 Promise가 해결될 때까지 코드 실행을 멈추고 결과를 반환한다.
 
-2.2. Async/Await 기본 사용법
+Async/Await 기본 사용법
 `;
 const fetchData = () => {
   return new Promise((resolve, reject) => {
@@ -87,17 +87,17 @@ const getData = async () => {
 
 getData();
 `
-2.3. Async/Await의 장점
+Async/Await의 장점
 가독성 향상: 동기식 코드처럼 읽히므로 이해하기 쉽다.
 에러 처리: try/catch를 통해 명확한 에러 처리가 가능하다.
 콜백 중첩 문제 해결: Promise의 체인보다 간단하게 작성할 수 있다.
 
-2.4. Async/Await의 단점
+Async/Await의 단점
 await는 항상 Promise를 반환해야 하므로, 모든 비동기 작업이 Promise로 처리되어야 한다.
 동기적으로 보이지만 내부적으로는 여전히 비동기이므로 실행 순서를 잘못 이해할 수 있다.
 병렬 실행이 필요한 경우 추가 작업이 필요하다.
 
-3. Async/Await와 Promise의 차이점
+Async/Await와 Promise의 차이점
 특징	Promise	Async/Await
 문법	.then()과 .catch()를 사용해 결과 처리	async 함수와 await 키워드로 결과 처리
 가독성	중첩이 많아질수록 코드 가독성이 떨어짐	동기식 코드처럼 읽히며 가독성이 높음
@@ -106,8 +106,8 @@ await는 항상 Promise를 반환해야 하므로, 모든 비동기 작업이 Pr
 병렬 처리	.all() 메서드를 사용해 병렬 처리 가능	Promise.all()를 함께 사용해야 병렬 처리 가능
 적합한 상황	단순한 비동기 작업	복잡한 비동기 작업 흐름
 
-4. Async/Await와 Promise 병렬 처리
-4.1. Promise로 병렬 처리
+Async/Await와 Promise 병렬 처리
+Promise로 병렬 처리
 `;
 const fetch1 = () =>
   new Promise((resolve) => setTimeout(() => resolve("Result 1"), 1000));
@@ -122,7 +122,7 @@ Promise.all([fetch1(), fetch2()])
     console.error(error);
   });
 `
-4.2. Async/Await로 병렬 처리
+Async/Await로 병렬 처리
 `;
 const fetch1 = () =>
   new Promise((resolve) => setTimeout(() => resolve("Result 1"), 1000));
@@ -140,7 +140,7 @@ const fetchAll = async () => {
 
 fetchAll();
 `
-5. Async/Await와 Promise의 선택 기준
+Async/Await와 Promise의 선택 기준
 간단한 작업
 Promise가 적합하다. 코드가 짧고 간결한 작업에는 .then()과 .catch()를 사용한다.
 
