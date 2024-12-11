@@ -50,9 +50,9 @@ type Mutation {
 }
 `
 TypeScript를 활용한 GraphQL 예제
-TypeScript와 GraphQL 클라이언트(graphql-request)를 활용하여 실습한다.
+TypeScript와 GraphQL 클라이언트(graphql-request)를 활용
 
-1. GraphQL 클라이언트 설정
+GraphQL 클라이언트 설정
 GraphQL 요청은 graphql-request 패키지를 통해 처리할 수 있다.
 `
 // npm install graphql-request
@@ -67,7 +67,7 @@ interface GraphQLResponse<T> {
   data: T;
 }
 `
-2. GraphQL Query: 데이터 조회
+GraphQL Query: 데이터 조회
 GraphQL Query를 사용해 데이터를 조회한다.
 
 GraphQL Query 정의
@@ -112,7 +112,7 @@ const fetchUsers = async (): Promise<User[]> => {
   console.log('Fetched Users:', users);
 })();
 `
-3. GraphQL Mutation: 데이터 변경
+GraphQL Mutation: 데이터 변경
 GraphQL Mutation을 사용해 데이터를 생성한다.
 
 GraphQL Mutation 정의
@@ -151,7 +151,7 @@ const createUser = async (name: string, email: string): Promise<User> => {
   console.log('Created User:', newUser);
 })();
 `
-4. GraphQL Variables
+GraphQL Variables
 GraphQL 요청은 **변수(variables)**를 통해 동적으로 값을 전달할 수 있습니다.
 
 예제
@@ -178,17 +178,17 @@ const fetchUser = async (id: string): Promise<User> => {
   console.log('Fetched User:', user);
 })();
 `
-5. GraphQL Subscription
+GraphQL Subscription
 GraphQL Subscription은 실시간 데이터를 처리하는 데 사용된다. 
 Apollo Client를 사용해 WebSocket 기반의 실시간 통신을 구현할 수 있다.
 
-6. GraphQL의 장점
+GraphQL의 장점
 유연성: 클라이언트는 필요한 데이터만 요청 가능.
 효율성: 중첩된 데이터를 한 번의 요청으로 가져올 수 있음.
 타입 안정성: 스키마 기반으로 데이터 구조를 검증.
 단일 엔드포인트: 관리가 간편하고 직관적.
 
-7. GraphQL과 REST 비교
+GraphQL과 REST 비교
 REST API는 여러 엔드포인트
 GraphQL는 단일 엔드포인트
 
@@ -201,7 +201,7 @@ GraphQL는 데이터 스키마가 강력한 타입 스키마 제공
 REST API는 실시간 지원 별도 설정이 필요
 GraphQL는 Subscription으로 기본 제공
 
-8. GraphQL의 한계
+GraphQL의 한계
 학습 곡선: REST보다 복잡한 초기 설정.
 캐싱 어려움: REST의 캐싱 방식보다 어렵고 추가 설정 필요.
 서버 부하: 유연한 쿼리로 인해 서버가 과부하될 가능성 있음.
