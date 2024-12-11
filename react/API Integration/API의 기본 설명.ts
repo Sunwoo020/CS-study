@@ -44,7 +44,7 @@ interface CreateUserRequest {
   email: string;
 }
 `
-2. Axios 인스턴스 생성
+Axios 인스턴스 생성
 Axios는 API 호출을 쉽게 처리할 수 있는 HTTP 클라이언트다.
 
 `import axios, { AxiosInstance } from 'axios';
