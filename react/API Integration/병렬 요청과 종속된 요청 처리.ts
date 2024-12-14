@@ -13,6 +13,7 @@ JavaScript의 비동기 환경에서 병렬 요청은 Promise.all 또는 Promise
 Promise.all을 사용한 병렬 요청
 Promise.all은 전달된 모든 Promise가 성공할 때 하나의 Promise를 반환한다
 하나라도 실패하면 전체 요청이 실패로 간주된다
+
 예제
 `;
 const fetchData1 = () =>
